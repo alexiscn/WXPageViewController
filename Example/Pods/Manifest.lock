@@ -1,0 +1,23 @@
+PODS:
+  - MJRefresh (3.4.3)
+  - WXPageViewController (0.0.1)
+
+DEPENDENCIES:
+  - MJRefresh
+  - WXPageViewController (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - MJRefresh
+
+EXTERNAL SOURCES:
+  WXPageViewController:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  MJRefresh: 53e3e3219f204425ee6d3e62e8733d3295944cd6
+  WXPageViewController: 8eeaaf4d2636766e2da39a145288b9c873f853bc
+
+PODFILE CHECKSUM: 78b4b19de43083b5e5c5f879ce6ddcc6743af2c7
+
+COCOAPODS: 1.9.3

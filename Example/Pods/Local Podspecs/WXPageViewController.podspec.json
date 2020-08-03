@@ -1,0 +1,23 @@
+{
+  "name": "WXPageViewController",
+  "version": "0.0.1",
+  "license": {
+    "type": "MIT"
+  },
+  "requires_arc": true,
+  "source": {
+    "git": "https://github.com/alexiscn/WXPageViewController.git",
+    "tag": "0.0.1"
+  },
+  "summary": "WXPageViewController",
+  "homepage": "https://github.com/alexiscn/WXPageViewController",
+  "authors": {
+    "alexiscn": "alexiscn@example.com"
+  },
+  "platforms": {
+    "ios": "12.0"
+  },
+  "swift_versions": "5.0",
+  "source_files": "Sources/**/*.{swift}",
+  "swift_version": "5.0"
+}
