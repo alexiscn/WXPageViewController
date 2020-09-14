@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7B6F682589F6A991FB092B46 /* Pods_PageViewControllerExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7496EFBAECB890BA107D9C97 /* Pods_PageViewControllerExample.framework */; };
+		A39EB1EC250F5DD6007AE7CF /* TwitterProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39EB1EB250F5DD6007AE7CF /* TwitterProfileViewController.swift */; };
 		A3B5313724D8232500C1A09C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B5313624D8232500C1A09C /* AppDelegate.swift */; };
 		A3B5313924D8232500C1A09C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B5313824D8232500C1A09C /* SceneDelegate.swift */; };
 		A3B5313B24D8232500C1A09C /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B5313A24D8232500C1A09C /* MainViewController.swift */; };
@@ -20,6 +21,7 @@
 /* Begin PBXFileReference section */
 		7496EFBAECB890BA107D9C97 /* Pods_PageViewControllerExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PageViewControllerExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		79BF01FDE402D3417F6D550E /* Pods-PageViewControllerExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PageViewControllerExample.debug.xcconfig"; path = "Target Support Files/Pods-PageViewControllerExample/Pods-PageViewControllerExample.debug.xcconfig"; sourceTree = "<group>"; };
+		A39EB1EB250F5DD6007AE7CF /* TwitterProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterProfileViewController.swift; sourceTree = "<group>"; };
 		A3B5313324D8232500C1A09C /* PageViewControllerExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PageViewControllerExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3B5313624D8232500C1A09C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A3B5313824D8232500C1A09C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				A3BB5B8D24DD52110061AC46 /* PurePageViewController.swift */,
+				A39EB1EB250F5DD6007AE7CF /* TwitterProfileViewController.swift */,
 			);
 			path = Samples;
 			sourceTree = "<group>";
@@ -238,6 +241,7 @@
 			files = (
 				A3B5313B24D8232500C1A09C /* MainViewController.swift in Sources */,
 				A3B5313724D8232500C1A09C /* AppDelegate.swift in Sources */,
+				A39EB1EC250F5DD6007AE7CF /* TwitterProfileViewController.swift in Sources */,
 				A3B5313924D8232500C1A09C /* SceneDelegate.swift in Sources */,
 				A3BB5B8E24DD52110061AC46 /* PurePageViewController.swift in Sources */,
 			);

@@ -2,7 +2,7 @@
 //  WXPageViewController.swift
 //  WXPageViewController
 //
-//  Created by xu.shuifeng on 2020/7/31.
+//  Created by xushuifeng on 2020/7/31.
 //  Copyright © 2020 alexiscn. All rights reserved.
 //
 
@@ -19,11 +19,15 @@ import UIKit
     /// - Parameters:
     ///   - pageViewController: An object representing the page view controller requesting this information
     ///   - index: An index locating the page in the page view controller.
-    func pageViewController(_ pageViewController: WXPageViewController, viewControllerAt index: Int) -> UIViewController
+    func pageViewController(_ pageViewController: WXPageViewController,
+                            viewControllerAt index: Int) -> UIViewController
     
 }
 
 @objc public protocol WXPageViewControllerDelegate: class {
+    
+    @objc optional func pageViewController(_ pageViewController: WXPageViewController,
+                                           didUpdatedScrollingPercent percent: CGFloat)
     
     @objc optional func pageViewController(_ pageViewController: WXPageViewController,
                                            didEnterViewController viewController: UIViewController?,
@@ -41,40 +45,66 @@ public class WXPageViewController: UIViewController {
     
     /// A Boolean value that controls whether the page view bounces past the edge of content and back again.
     public var bounces: Bool = false {
-        didSet {
-            contentSrollView?.bounces = bounces
-        }
+        didSet { pageView.bounces = bounces }
+    }
+    
+    /// A Boolean value that
+    public var isScrollEnabled: Bool = true {
+        didSet { pageView.isScrollEnabled = isScrollEnabled }
     }
     
     private var _selectedIndex: Int = 0
-    public var selectedIndex: Int = 0 {
-        didSet {
+    public var selectedIndex: Int {
+        get {
             if viewHasLaidOut {
-                
+                return Int(pageView.contentOffset.x / pageView.bounds.width)
             } else {
-                
+                return _selectedIndex
+            }
+        }
+        set {
+            if viewHasLaidOut {
+                let x = CGFloat(newValue) * pageView.bounds.width
+                pageView.setContentOffset(CGPoint(x: x, y: 0), animated: true)
+            } else {
+                _selectedIndex = newValue
             }
         }
     }
     
     private var viewHasLaidOut = false
-    private var contentView: UIView!
-    private var contentSrollView: WXPageScrollView!
-    private var pages: [Int: Page] = [:]
-    private var pageFrames: [CGRect] = [] // cache child view controller frame
+    
+    private var pageView: UICollectionView!
+    
+    internal class PageCell: UICollectionViewCell {
+        
+        class var identifier: String { return "PagerCell" }
+                
+        weak var containerViewController: UIViewController?
+        weak var viewController: UIViewController? {
+            willSet {
+                viewController?.willMove(toParent: nil)
+                viewController?.view.removeFromSuperview()
+                viewController?.removeFromParent()
+            }
+            didSet {
+                if let viewController = viewController, let containerVC = containerViewController {
+                    containerVC.addChild(viewController)
+                    viewController.view.frame = contentView.bounds
+                    contentView.addSubview(viewController.view)
+                    viewController.didMove(toParent: containerVC)
+                    containerVC.setNeedsStatusBarAppearanceUpdate()
+                }
+            }
+        }
+    }
+    
+    public class WXPageCollectionView: UICollectionView {
+        
+    }
     
     var numberOfPages: Int {
         return dataSource?.numberOfPages(in: self) ?? 1
-    }
-    
-    var pageSize: CGSize {
-        return contentSrollView.bounds.size
-    }
-    
-    private var currentPage: Int {
-        get {
-            return Int(contentSrollView.contentOffset.x / contentView.bounds.width)
-        }
     }
     
     public init(dataSource: WXPageViewControllerDataSource) {
@@ -90,18 +120,24 @@ public class WXPageViewController: UIViewController {
         super.viewDidLoad()
         
         configureSubviews()
-        layoutContentViews()
-        addInitialViewController()
     }
     
     public override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         
-        layoutContentViews()
+        pageView.frame = view.bounds
         if !viewHasLaidOut {
             viewHasLaidOut = true
             
+            pageView.reloadData()
+            
+            let indexPath = IndexPath(item: _selectedIndex, section: 0)
+            pageView.scrollToItem(at: indexPath, at: [], animated: false)
         }
+    }
+    
+    public func setSelectedIndex(_ newIndex: Int, animated: Bool) {
+        
     }
     
     public override var shouldAutomaticallyForwardAppearanceMethods: Bool {
@@ -110,129 +146,83 @@ public class WXPageViewController: UIViewController {
     
 }
 
+// MARK: - UICollectionViewDataSource & UICollectionViewDelegate
+extension WXPageViewController: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
+    
+    public func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return dataSource?.numberOfPages(in: self) ?? 0
+    }
+    
+    public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: PageCell.identifier, for: indexPath) as! PageCell
+        cell.containerViewController = self
+        cell.viewController = dataSource?.pageViewController(self, viewControllerAt: indexPath.item)
+        return cell
+    }
+    
+    public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return collectionView.bounds.size
+    }
+}
+
 // MARK: - UIScrollViewDelegate
 extension WXPageViewController: UIScrollViewDelegate {
     
     public func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        layoutChildViewControllers()
+        guard scrollView.contentSize.width != 0 else { return }
+        
+        let pageSize = scrollView.bounds.size
+        var x = scrollView.contentOffset.x
+        x = min(max(0, x), scrollView.contentSize.width - pageSize.width)
+        let percent = x / pageSize.width
+        delegate?.pageViewController?(self, didUpdatedScrollingPercent: percent)
     }
     
-    public func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
-        
+    public func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+        let viewController = dataSource?.pageViewController(self, viewControllerAt: selectedIndex)
+        delegate?.pageViewController?(self, didEnterViewController: viewController, atIndex: selectedIndex)
     }
 }
 
+// MARK: - Private Work
 extension WXPageViewController {
     
     private func configureSubviews() {
-        view.clipsToBounds = true
-        contentView = UIView(frame: view.bounds)
-        contentView.clipsToBounds = true
-        view.addSubview(contentView)
-         
-        contentSrollView = WXPageScrollView()
-        contentSrollView.delegate = self
-        contentSrollView.clipsToBounds = true
-        contentSrollView.isPagingEnabled = true
-        contentSrollView.showsVerticalScrollIndicator = false
-        contentSrollView.showsHorizontalScrollIndicator = false
-        contentSrollView.contentInsetAdjustmentBehavior = .never
-        contentSrollView.isDirectionalLockEnabled = true
-        contentSrollView.scrollsToTop = false
-        contentView.addSubview(contentSrollView)
         
+        if #available(iOS 13, *) {
+            view.backgroundColor = UIColor.systemBackground
+        } else {
+            view.backgroundColor = UIColor.white
+        }
+        
+        view.clipsToBounds = true
+        
+        let layout = UICollectionViewFlowLayout()
+        layout.minimumLineSpacing = 0
+        layout.minimumInteritemSpacing = 0
+        layout.scrollDirection = .horizontal
+        
+        pageView = WXPageCollectionView(frame: .zero, collectionViewLayout: layout)
+        pageView.backgroundColor = .clear
+        pageView.showsVerticalScrollIndicator = false
+        pageView.showsHorizontalScrollIndicator = false
+        pageView.isPagingEnabled = true
+        pageView.contentInsetAdjustmentBehavior = .never
+        pageView.bounces = bounces
+        pageView.isPrefetchingEnabled = false
+        pageView.isDirectionalLockEnabled = true
+        pageView.scrollsToTop = false
+        pageView.register(PageCell.self, forCellWithReuseIdentifier: PageCell.identifier)
+        pageView.dataSource = self
+        pageView.delegate = self
+        view.addSubview(pageView)
+
         if let interactivePopGR = navigationController?.interactivePopGestureRecognizer {
-            contentSrollView.panGestureRecognizer.require(toFail: interactivePopGR)
+            pageView.panGestureRecognizer.require(toFail: interactivePopGR)
         }
     }
-    
-    private func layoutContentViews() {
-        let pageSize = CGSize(width: view.bounds.width, height: view.bounds.height)
-        contentView.frame = view.bounds
-        contentSrollView.frame = view.bounds
-        contentSrollView.contentSize = CGSize(width: CGFloat(numberOfPages) * pageSize.width,
-                                              height: pageSize.height)
-        pageFrames.removeAll()
-        for idx in 0 ..< numberOfPages {
-            let frame = CGRect(x: CGFloat(idx) * pageSize.width,
-                               y: 0,
-                               width: pageSize.width,
-                               height: pageSize.height)
-            pageFrames.append(frame)
-        }
-    }
-    
-    private func layoutChildViewControllers() {
-        let totalPages = numberOfPages
-        for idx in 0 ..< totalPages {
-//            let visible = isPageVisible(pageFrame: pageFrames[idx])
-//            print("page :\(idx), visible:\(visible)")
-//            if let page = pages[idx] {
-//                
-//            } else {
-//                
-//            }
-        }
-    }
-    
+
     private func isPageVisible(pageFrame: CGRect) -> Bool {
         return view.bounds.intersects(pageFrame)
-    }
-    
-    private func addInitialViewController() {
-        addViewController(at: selectedIndex)
-        let offset = CGPoint(x: CGFloat(selectedIndex) * pageSize.width, y: 0)
-        contentSrollView.setContentOffset(offset, animated: false)
-        
-        let viewController = pages[selectedIndex]?.viewController
-        delegate?.pageViewController?(self, didEnterViewController: viewController, atIndex: selectedIndex)
-    }
-    
-    private func addViewController(at index: Int) {
-        if pages.contains(where: { $0.key == index }) {
-            return
-        }
-        guard let viewController = dataSource?.pageViewController(self, viewControllerAt: index) else {
-            return
-        }
-        let page = Page(viewController: viewController, index: index)
-        pages[index] = page
-        
-        let pageSize = contentSrollView.bounds.size
-        
-        addChild(viewController)
-        let frame = CGRect(x: CGFloat(index) * pageSize.width, y: 0, width: pageSize.width, height: pageSize.height)
-        viewController.view.frame = frame
-        contentSrollView.addSubview(viewController.view)
-        viewController.didMove(toParent: self)
-    }
-    
-    private func removeViewController() {
-        
-    }
-    
-    private func renderedPercentOfViewController(_ viewController: UIViewController) -> CGFloat {
-        let frame = self.view.convert(viewController.view.frame, from: contentSrollView)
-        if frame.intersects(view.bounds) {
-            let progress = frame.origin.x / frame.size.width
-            return 1 - abs(progress)
-        } else {
-            return 0.0
-        }
-    }
-    
-    class Page {
-        
-        let viewController: UIViewController
-        
-        var renderedPercent: CGFloat = 0
-        
-        var index: Int
-        
-        init(viewController: UIViewController, index: Int) {
-            self.viewController = viewController
-            self.index = index
-        }
-        
     }
 }
