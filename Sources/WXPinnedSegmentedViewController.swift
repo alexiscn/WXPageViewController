@@ -9,6 +9,13 @@ import UIKit
 
 public protocol WXPinnedSegmentedViewControllerDataSource: class {
     
+    func numberOfItemsInPinnedSegmentedViewController(_ segmentedViewController: WXPinnedSegmentedViewController) -> Int
+    
+    func pinnedSegmentedViewController(_ segmentedViewController: WXPinnedSegmentedViewController,
+                                       viewControllerAtIndex index: Int) -> UIViewController
+    
+    func pinnedSegmentedViewController(_ segmentedViewController: WXPinnedSegmentedViewController,
+                                       titleAtIndex index: Int) -> String
 }
 
 public protocol WXPinnedSegmentedViewControllerDelgate: class {
@@ -37,6 +44,8 @@ public class WXPinnedSegmentedViewController: UIViewController {
         return _contentView
     }()
     
+    private var contentViewController: WXSegmentedViewController!
+    
     public override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -54,11 +63,16 @@ public class WXPinnedSegmentedViewController: UIViewController {
     }
 
     private func configureContentController() {
-        
+        contentViewController = WXSegmentedViewController()
+        contentViewController.dataSource = self
+        addChild(contentViewController)
+        contentViewController.view.frame = view.bounds
+        view.addSubview(contentViewController.view)
+        contentViewController.didMove(toParent: self)
     }
 }
 
-
+// MARK: - WXPinnedScrollViewDelegate
 extension WXPinnedSegmentedViewController: WXPinnedScrollViewDelegate {
     
     public func pinnedScrollView(_ scrollView: WXPinnedScrollView, shouldScrollWithSubview subview: UIScrollView) -> Bool {
@@ -70,5 +84,21 @@ extension WXPinnedSegmentedViewController: WXPinnedScrollViewDelegate {
     
     public func scrollViewDidScroll(_ scrollView: UIScrollView) {
         
+    }
+}
+
+// MARK: - WXSegmentedViewControllerDataSource
+extension WXPinnedSegmentedViewController: WXSegmentedViewControllerDataSource {
+    
+    public func numberOfItemsFor(_ segmentedViewController: WXSegmentedViewController) -> Int {
+        return dataSource?.numberOfItemsInPinnedSegmentedViewController(self) ?? 0
+    }
+    
+    public func segmentedViewController(_ segmentedViewController: WXSegmentedViewController, viewControllerAt index: Int) -> UIViewController {
+        return dataSource?.pinnedSegmentedViewController(self, viewControllerAtIndex: index) ?? UIViewController()
+    }
+    
+    public func segmentedViewController(_ segmentedViewController: WXSegmentedViewController, titleAtIndex index: Int) -> String {
+        return dataSource?.pinnedSegmentedViewController(self, titleAtIndex: index) ?? ""
     }
 }

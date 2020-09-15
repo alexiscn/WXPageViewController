@@ -9,6 +9,10 @@
 import UIKit
 import WXPageViewController
 
+class TwitterProfileHeaderView: UIView {
+    
+}
+
 class TwitterProfileViewController: UIViewController {
 
     override func viewDidLoad() {

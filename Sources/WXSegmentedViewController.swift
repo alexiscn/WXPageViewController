@@ -25,6 +25,10 @@ import UIKit
     func segmentedViewController(_ segmentedViewController: WXSegmentedViewController,
                                  titleAtIndex index: Int) -> String
     
+    @objc optional func segmentedViewControllerPreferredHeaderFrame(_ segmentedViewController: WXSegmentedViewController) -> CGRect
+    
+    @objc optional func segmentedViewControllerPreferredPageFrame(_ segmentedViewController: WXSegmentedViewController) -> CGRect
+    
 }
 
 @objc public protocol WXSegmentedViewControllerDelegate: class {
@@ -43,7 +47,7 @@ public class WXSegmentedViewController: UIViewController {
     
     public weak var delegate: WXSegmentedViewControllerDelegate?
     
-    private var headerView: WXSegmentedView!
+    private var headerView: WXSegmentedHeaderView!
     
     private var pageViewController: WXPageViewController!
     
@@ -67,7 +71,11 @@ public class WXSegmentedViewController: UIViewController {
     }
     
     private func configureHeaderView() {
-        
+        let headerFrame = CGRect(x: 0, y: 0, width: view.bounds.width, height: 44)
+        let frame = dataSource?.segmentedViewControllerPreferredHeaderFrame?(self) ?? headerFrame
+        headerView = WXSegmentedHeaderView(frame: frame)
+        headerView.delegate = self
+        view.addSubview(headerView)
     }
     
 }
@@ -84,14 +92,22 @@ extension WXSegmentedViewController: WXPageViewControllerDataSource {
     }
 }
 
+// MARK: - WXSegmentedViewDelegate
+extension WXSegmentedViewController: WXSegmentedHeaderViewDelegate {
+    
+    public func segmentedView(_ headerView: WXSegmentedHeaderView, didSelectedIndex index: Int) {
+        
+    }
+}
+
 // MARK: - WXPageViewControllerDelegate
 extension WXSegmentedViewController: WXPageViewControllerDelegate {
     
     public func pageViewController(_ pageViewController: WXPageViewController, didUpdatedScrollingPercent percent: CGFloat) {
-        
+        headerView.pageScrollViewDidUpdateScrollingPercent(percent)
     }
     
     public func pageViewController(_ pageViewController: WXPageViewController, didEnterViewController viewController: UIViewController?, atIndex index: Int) {
-        
+        pageViewController.selectedIndex = index
     }
 }
