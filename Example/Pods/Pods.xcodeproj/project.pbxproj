@@ -7,34 +7,38 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		029D77C257EA30EE6EBA817C3053DD0E /* WXPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A4F7D1B5D49EC35334173A2322763 /* WXPageViewController.swift */; };
 		050A189DF0B4F405E9D3389F24EDF835 /* MJRefreshAutoFooter.h in Headers */ = {isa = PBXBuildFile; fileRef = 12A303347EEC803EB0F0CFA9EF0DE9E5 /* MJRefreshAutoFooter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		06AEA7117FE98F2409D2432AAEC326A8 /* MJRefreshGifHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 68B61EDE914D444EFEF221AE6116731B /* MJRefreshGifHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0AECE221BADEA19083FC0CACE5973D8A /* MJRefreshFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = EDB66A2B2F995E279B686097A4A88F48 /* MJRefreshFooter.m */; };
 		0F47C7DE634D4FE07B595912093139FE /* MJRefresh.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9B19310E3CD07CD99102FDDD69723C08 /* MJRefresh.bundle */; };
-		1261A4504ABC000DADB914DFD485C8F7 /* WXPageViewController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A97AA4783BD36B4CD0847817D44D6FC7 /* WXPageViewController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		13611CB0839D7F8C3EFCB9F9ED5495BD /* NSBundle+MJRefresh.h in Headers */ = {isa = PBXBuildFile; fileRef = 7155B1176EA63625A6A4247708177F4C /* NSBundle+MJRefresh.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1AC8AE52549503DDCAD18BB80B1565D5 /* WXPinnedSegmentedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3A6642E86BFA8D190B5049DDC2FC06 /* WXPinnedSegmentedViewController.swift */; };
+		1C967EFFAA6B4B69FB22E9D0AB3E94A9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		22513825A54DC9B8C23BF0CC7F45B00F /* MJRefreshConst.m in Sources */ = {isa = PBXBuildFile; fileRef = E8D2D9769334AA7745727BC97BE98D35 /* MJRefreshConst.m */; };
+		23325EB07CB4EE5839122DE86610212F /* WXBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E0DB17E9681BC60A3B1619EFACCA5B /* WXBadge.swift */; };
 		2F8E5D934B14A047C1701C548EFD6C3B /* Pods-PageViewControllerExample-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CB0E467AE7A1F72C7D5D8F72D9C9DAD /* Pods-PageViewControllerExample-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		30DDF098EDF1D726CB93A007BF437741 /* WXSegmentedHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74276BFC6A8BFD4EBD8FF97B009953D /* WXSegmentedHeaderView.swift */; };
+		390A37896FEBE3274DC51298F629B614 /* WXPageViewController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3004A0EA9CAE1F57FFDBC67DB4F0A222 /* WXPageViewController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		39172F66777E6BC6EBFFC5948E3CC765 /* MJRefreshNormalHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = A3966C677EE705C59899A45A91F01618 /* MJRefreshNormalHeader.m */; };
 		4055A0ACF4681DEA04E2F0AECD0B97B2 /* UIScrollView+MJRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 29D40F8F4A4B92E008B058331E1DAD1F /* UIScrollView+MJRefresh.m */; };
 		45626116C19AA54A2359E85DAEB5AD42 /* UIScrollView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A328E4AB790C666957BE840EEFD87A0 /* UIScrollView+MJExtension.m */; };
 		4583409C21FCF11CB11FE51B0B235A00 /* MJRefreshFooter.h in Headers */ = {isa = PBXBuildFile; fileRef = 10E83D8EF0F45FB29281E9917C0840BB /* MJRefreshFooter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		45BE58736DEA4B25831598E4CFD8B703 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		468A35DCCD620E4862D4C099DDC9D45E /* WXSegmentedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5549AC6E5C4A4F5BDBB3AAF369E97C13 /* WXSegmentedViewController.swift */; };
 		47C5E12941194A00ED65EECCD1E4B9C3 /* MJRefreshComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CE1DD0895A1E2D59A8E36E341EEA3C5 /* MJRefreshComponent.m */; };
+		4D59B361C9B95EAE5442A302E87E5491 /* WXPinnedScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817973A36747EFE8C2A2AC48EB1E2275 /* WXPinnedScrollView.swift */; };
 		4F5A97CA16447E2BDF919A40C1652E9F /* MJRefreshHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 20919130445CC50B553C803BC704B895 /* MJRefreshHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5080C539C74DF65643D65291B7129839 /* WXSegmentedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87F28A959207B19D97DE9F974A5D1A6 /* WXSegmentedViewController.swift */; };
 		528237787EC24E25AD6BB486B1BEBE5D /* MJRefreshBackStateFooter.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FC27F2B4EC1738411C97D9671C7F9DA /* MJRefreshBackStateFooter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5475797B1BF438E592D4745BF2BAACE2 /* WXPageViewController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A44904160A4F98D6459ACBDAA185E98D /* WXPageViewController-dummy.m */; };
 		595527C54E24251571AA3B9E61D616BE /* MJRefreshBackFooter.h in Headers */ = {isa = PBXBuildFile; fileRef = AFDEA68299BD0DB3D35B98777C6EC909 /* MJRefreshBackFooter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5A384A2C99EB807D449323F9814098A9 /* MJRefresh-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E56EB596EF3E96E6EBF8B8982954A071 /* MJRefresh-dummy.m */; };
+		5AE4C905E3E987E3FD7B5620989FFD39 /* WXSegmentedHeaderItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075C87E4CCA718B47EC605BA3E25B705 /* WXSegmentedHeaderItemView.swift */; };
 		61EF33C64C26EDF6A86430C30CCC8125 /* MJRefreshAutoFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F6AE4F4B2DD9C6F1A53729914181FB5 /* MJRefreshAutoFooter.m */; };
 		64FAE071FA6CADC6F4543DCD82705D12 /* UIView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A43B7B975CDB2330FC2D858555166C8 /* UIView+MJExtension.m */; };
 		675F8319809B90A18BB685E1EA09F886 /* MJRefreshAutoNormalFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = B98DB983951866FF0FB864D9B4E520D1 /* MJRefreshAutoNormalFooter.m */; };
 		696BEC58A027BCCDFB378637C75C78A5 /* MJRefreshAutoGifFooter.h in Headers */ = {isa = PBXBuildFile; fileRef = AC16C56785B09BDB098FA2489E75878F /* MJRefreshAutoGifFooter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6B8784490E19F87A5F9AB78C3DD2692D /* WXPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B650F2433A3063522AFACEECACC9BA /* WXPageViewController.swift */; };
 		6C1461ED2AF53643934B4B97E9BB8A7D /* UIScrollView+MJRefresh.h in Headers */ = {isa = PBXBuildFile; fileRef = 6F018543BA52C0DAC07D7EB59CC59975 /* UIScrollView+MJRefresh.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		710200F11DC7A1879D4DD570EAC49AEC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		7F02E38D09D6CD62428DE30DBD2024CF /* WXSegmentedHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA26D40C1CBE6AC4EE3FDC4A4C6C11BA /* WXSegmentedHeaderView.swift */; };
 		852887173A1F802E93E8BF3FEDD3B8BD /* MJRefreshAutoStateFooter.h in Headers */ = {isa = PBXBuildFile; fileRef = F91E97AF1917A4887608CB4A4F52FD5C /* MJRefreshAutoStateFooter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		85DBD599545B98F7AB17B94C86A4DC37 /* MJRefreshGifHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = BDFBAB43B088997DD85DFDD32030FFEF /* MJRefreshGifHeader.m */; };
 		8638BD5B0012059ABB8B3C588633667C /* MJRefresh.h in Headers */ = {isa = PBXBuildFile; fileRef = 2969C4BF8BDE8EE6D2F2D1D3FE2DC0AE /* MJRefresh.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -43,21 +47,20 @@
 		8F736DFA1256E8BE2DCC41F66F2A2561 /* MJRefreshHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = A9C11F500618AD5C0EE0177C72E19B69 /* MJRefreshHeader.m */; };
 		94940A2C852223F20EE7ED83A9BB5179 /* MJRefreshConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 13339018C5D041626A85A28A91D3E550 /* MJRefreshConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		95BD9ECE799ABE9F7F41DB1D4F44DE31 /* MJRefreshComponent.h in Headers */ = {isa = PBXBuildFile; fileRef = CF6FD6EB04615132851B436F214F4EC5 /* MJRefreshComponent.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		97B71CF23BF5007D1651515D2BCBC444 /* WXPinnedScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7327EF8E9A965D734C28ADB502F194C /* WXPinnedScrollView.swift */; };
+		9A673993E0E518B4F7DAEA4CB905E124 /* WXPinnedSegmentedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E7DB5A1238318A42279E1502967D67 /* WXPinnedSegmentedViewController.swift */; };
 		A7B257D75993F5C90FAEEB16780CC215 /* NSBundle+MJRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = AF72E8DE6DAB09CE8B8AF9A85E1DE699 /* NSBundle+MJRefresh.m */; };
 		A8F266741C653EAED3DD49D75DB9D5A8 /* MJRefreshConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = C11FECEDF683DF9CB9CEB573484B6CC4 /* MJRefreshConfig.m */; };
 		AA5F359B86973F47D34F4A0FD745E4EC /* MJRefreshStateHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 7017F2751BB577FBF465BA0619EF58A7 /* MJRefreshStateHeader.m */; };
-		AF3AF9D4D525F17444B1E12117993C27 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		B545FC64504EB25999F30CFC1E27E702 /* MJRefreshAutoNormalFooter.h in Headers */ = {isa = PBXBuildFile; fileRef = 950777F9E11EB765DB3CE9B512BA4E33 /* MJRefreshAutoNormalFooter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BD9A09840189D37657887D1467CAA330 /* MJRefreshStateHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = CCBFB2C12764F70EA8AE44853240A082 /* MJRefreshStateHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C0B2C760334561E4910FADD8520C85C3 /* UIView+MJExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C541DAEE477707D736D9CB01A49A255 /* UIView+MJExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CA05CF50B6ECFF85266C8553DD7D08D5 /* WXPageViewController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 97216C09F6A3A24CC2DCC70DEFE20411 /* WXPageViewController-dummy.m */; };
 		CBDC089A3E26FC6825F64E078195BF01 /* UIScrollView+MJExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 172ADF6B76FE4FB0911BE9A8B2638580 /* UIScrollView+MJExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CE7004AFA3B30D672A4DD9B4D3E6915B /* MJRefreshConst.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A8309F3F61949BD34782D2E7C53571B /* MJRefreshConst.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D476A1AD427ED4B951ACCB95459033CC /* MJRefreshBackNormalFooter.h in Headers */ = {isa = PBXBuildFile; fileRef = CCB3FF19772B6DF80EBCCCF49FC631D7 /* MJRefreshBackNormalFooter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D7C7180F91FCCD98494FD0D7269C8521 /* Pods-PageViewControllerExample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E6F73CDB5289A76B6476BBA917C810C /* Pods-PageViewControllerExample-dummy.m */; };
 		D8328429281E82F67DB47AF6C9D95191 /* MJRefreshBackGifFooter.h in Headers */ = {isa = PBXBuildFile; fileRef = A58B1BEDCAB842F5FE1EF6222A12838C /* MJRefreshBackGifFooter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DCCC7E7E734A732901932B2E9D662EE7 /* MJRefreshAutoStateFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = A91F27B033BC8597593DA4F3797E3CE9 /* MJRefreshAutoStateFooter.m */; };
+		E85961E5DC509DBDC34DD3A5ADA2E8BD /* WXBadgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A157911E54791CA21561315D7787059B /* WXBadgeView.swift */; };
 		EB209DF5DE13F4D802DA1BE20A9CEBD2 /* MJRefreshBackStateFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 043AA245FD8CBCDD767FD533863BE1E6 /* MJRefreshBackStateFooter.m */; };
 		ED3E2C1051BAC5B50BE441D95D8801C0 /* MJRefreshBackGifFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = BABA745ECEABD779DED456A3225A2F5E /* MJRefreshBackGifFooter.m */; };
 		EECE40C6F296379F86ABB36AF79BB8EC /* MJRefreshNormalHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = E457105F885C5E7DD18759E6D8B6B972 /* MJRefreshNormalHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -84,13 +87,13 @@
 
 /* Begin PBXFileReference section */
 		043AA245FD8CBCDD767FD533863BE1E6 /* MJRefreshBackStateFooter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshBackStateFooter.m; path = MJRefresh/Custom/Footer/Back/MJRefreshBackStateFooter.m; sourceTree = "<group>"; };
-		0A3A6642E86BFA8D190B5049DDC2FC06 /* WXPinnedSegmentedViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WXPinnedSegmentedViewController.swift; path = Sources/WXPinnedSegmentedViewController.swift; sourceTree = "<group>"; };
-		0E4D0519D5CAA45FE74D906B58484329 /* WXPageViewController.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WXPageViewController.release.xcconfig; sourceTree = "<group>"; };
+		075C87E4CCA718B47EC605BA3E25B705 /* WXSegmentedHeaderItemView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WXSegmentedHeaderItemView.swift; path = Sources/WXSegmentedHeaderItemView.swift; sourceTree = "<group>"; };
 		0E6F73CDB5289A76B6476BBA917C810C /* Pods-PageViewControllerExample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PageViewControllerExample-dummy.m"; sourceTree = "<group>"; };
 		0FC27F2B4EC1738411C97D9671C7F9DA /* MJRefreshBackStateFooter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshBackStateFooter.h; path = MJRefresh/Custom/Footer/Back/MJRefreshBackStateFooter.h; sourceTree = "<group>"; };
 		10E83D8EF0F45FB29281E9917C0840BB /* MJRefreshFooter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshFooter.h; path = MJRefresh/Base/MJRefreshFooter.h; sourceTree = "<group>"; };
 		12A303347EEC803EB0F0CFA9EF0DE9E5 /* MJRefreshAutoFooter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshAutoFooter.h; path = MJRefresh/Base/MJRefreshAutoFooter.h; sourceTree = "<group>"; };
 		13339018C5D041626A85A28A91D3E550 /* MJRefreshConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshConfig.h; path = MJRefresh/MJRefreshConfig.h; sourceTree = "<group>"; };
+		14D0064BCC458391DC185631836E0DBA /* WXPageViewController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WXPageViewController-prefix.pch"; sourceTree = "<group>"; };
 		172ADF6B76FE4FB0911BE9A8B2638580 /* UIScrollView+MJExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIScrollView+MJExtension.h"; path = "MJRefresh/UIScrollView+MJExtension.h"; sourceTree = "<group>"; };
 		19732C208C6D11637F49B429C329C3E5 /* MJRefresh.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MJRefresh.modulemap; sourceTree = "<group>"; };
 		1A328E4AB790C666957BE840EEFD87A0 /* UIScrollView+MJExtension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIScrollView+MJExtension.m"; path = "MJRefresh/UIScrollView+MJExtension.m"; sourceTree = "<group>"; };
@@ -98,67 +101,70 @@
 		1CB0E467AE7A1F72C7D5D8F72D9C9DAD /* Pods-PageViewControllerExample-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PageViewControllerExample-umbrella.h"; sourceTree = "<group>"; };
 		20919130445CC50B553C803BC704B895 /* MJRefreshHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshHeader.h; path = MJRefresh/Base/MJRefreshHeader.h; sourceTree = "<group>"; };
 		2261740C984BB3BC7F0FAC3C2EFE4E38 /* Pods-PageViewControllerExample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PageViewControllerExample-acknowledgements.plist"; sourceTree = "<group>"; };
+		22E7DB5A1238318A42279E1502967D67 /* WXPinnedSegmentedViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WXPinnedSegmentedViewController.swift; path = Sources/WXPinnedSegmentedViewController.swift; sourceTree = "<group>"; };
+		24B650F2433A3063522AFACEECACC9BA /* WXPageViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WXPageViewController.swift; path = Sources/WXPageViewController.swift; sourceTree = "<group>"; };
 		24FC049172A30B3223AA3535853E5AF2 /* MJRefreshAutoGifFooter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshAutoGifFooter.m; path = MJRefresh/Custom/Footer/Auto/MJRefreshAutoGifFooter.m; sourceTree = "<group>"; };
 		2969C4BF8BDE8EE6D2F2D1D3FE2DC0AE /* MJRefresh.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefresh.h; path = MJRefresh/MJRefresh.h; sourceTree = "<group>"; };
 		29D40F8F4A4B92E008B058331E1DAD1F /* UIScrollView+MJRefresh.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIScrollView+MJRefresh.m"; path = "MJRefresh/UIScrollView+MJRefresh.m"; sourceTree = "<group>"; };
+		3004A0EA9CAE1F57FFDBC67DB4F0A222 /* WXPageViewController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WXPageViewController-umbrella.h"; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		3E2B4828B19C4D2BA38B03E0F583CFBB /* WXPageViewController-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "WXPageViewController-Info.plist"; sourceTree = "<group>"; };
 		3F11D32CA9E619ED00B2BCC97F05C399 /* Pods-PageViewControllerExample.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-PageViewControllerExample.modulemap"; sourceTree = "<group>"; };
-		4B7A4F7D1B5D49EC35334173A2322763 /* WXPageViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WXPageViewController.swift; path = Sources/WXPageViewController.swift; sourceTree = "<group>"; };
+		4384FF8E2E8FE171D7D44B2B1B5154E8 /* WXPageViewController.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = WXPageViewController.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		442DECDA2E4037AA4F578FA3D41DA5E7 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		4BF630ECD1ADAEABEB9C9CD214FE70D2 /* MJRefresh.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MJRefresh.release.xcconfig; sourceTree = "<group>"; };
-		5549AC6E5C4A4F5BDBB3AAF369E97C13 /* WXSegmentedViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WXSegmentedViewController.swift; path = Sources/WXSegmentedViewController.swift; sourceTree = "<group>"; };
 		555D95E5804429A781D14ED9A49F5CF4 /* Pods-PageViewControllerExample-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PageViewControllerExample-frameworks.sh"; sourceTree = "<group>"; };
 		586F00B534811F6F0832F77E66D340CD /* Pods-PageViewControllerExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PageViewControllerExample.release.xcconfig"; sourceTree = "<group>"; };
-		64E63DA40AEDF7A2B23A8D04D45DDA56 /* WXPageViewController.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WXPageViewController.debug.xcconfig; sourceTree = "<group>"; };
 		68B61EDE914D444EFEF221AE6116731B /* MJRefreshGifHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshGifHeader.h; path = MJRefresh/Custom/Header/MJRefreshGifHeader.h; sourceTree = "<group>"; };
 		68EC24AE3931095F1E9F957E94D01FB5 /* Pods-PageViewControllerExample-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PageViewControllerExample-Info.plist"; sourceTree = "<group>"; };
 		6F018543BA52C0DAC07D7EB59CC59975 /* UIScrollView+MJRefresh.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIScrollView+MJRefresh.h"; path = "MJRefresh/UIScrollView+MJRefresh.h"; sourceTree = "<group>"; };
 		7017F2751BB577FBF465BA0619EF58A7 /* MJRefreshStateHeader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshStateHeader.m; path = MJRefresh/Custom/Header/MJRefreshStateHeader.m; sourceTree = "<group>"; };
-		70339E65DC2D59658378941C5EEBBA6C /* WXPageViewController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WXPageViewController-prefix.pch"; sourceTree = "<group>"; };
 		7155B1176EA63625A6A4247708177F4C /* NSBundle+MJRefresh.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSBundle+MJRefresh.h"; path = "MJRefresh/NSBundle+MJRefresh.h"; sourceTree = "<group>"; };
 		77BFB2CB10670A552B4E64D721CB7E3B /* MJRefresh-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MJRefresh-umbrella.h"; sourceTree = "<group>"; };
+		7F3DBA7F1FD0BFAFAE4A7554BB65F2CF /* WXPageViewController.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WXPageViewController.debug.xcconfig; sourceTree = "<group>"; };
+		817973A36747EFE8C2A2AC48EB1E2275 /* WXPinnedScrollView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WXPinnedScrollView.swift; path = Sources/WXPinnedScrollView.swift; sourceTree = "<group>"; };
 		8A8309F3F61949BD34782D2E7C53571B /* MJRefreshConst.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshConst.h; path = MJRefresh/MJRefreshConst.h; sourceTree = "<group>"; };
 		8C4CB643852CACCCDD3E8BD293BD3C1E /* MJRefresh.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MJRefresh.debug.xcconfig; sourceTree = "<group>"; };
 		8C541DAEE477707D736D9CB01A49A255 /* UIView+MJExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+MJExtension.h"; path = "MJRefresh/UIView+MJExtension.h"; sourceTree = "<group>"; };
 		8F6AE4F4B2DD9C6F1A53729914181FB5 /* MJRefreshAutoFooter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshAutoFooter.m; path = MJRefresh/Base/MJRefreshAutoFooter.m; sourceTree = "<group>"; };
-		946E40220CC71EE0EFCEC93FBB8D2417 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		950777F9E11EB765DB3CE9B512BA4E33 /* MJRefreshAutoNormalFooter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshAutoNormalFooter.h; path = MJRefresh/Custom/Footer/Auto/MJRefreshAutoNormalFooter.h; sourceTree = "<group>"; };
-		97216C09F6A3A24CC2DCC70DEFE20411 /* WXPageViewController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "WXPageViewController-dummy.m"; sourceTree = "<group>"; };
 		9B19310E3CD07CD99102FDDD69723C08 /* MJRefresh.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = MJRefresh.bundle; path = MJRefresh/MJRefresh.bundle; sourceTree = "<group>"; };
 		9CE1DD0895A1E2D59A8E36E341EEA3C5 /* MJRefreshComponent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshComponent.m; path = MJRefresh/Base/MJRefreshComponent.m; sourceTree = "<group>"; };
 		9D09586D5D4EF1D0D2BB195C82910F07 /* MJRefresh-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MJRefresh-prefix.pch"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A157911E54791CA21561315D7787059B /* WXBadgeView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WXBadgeView.swift; path = Sources/WXBadgeView.swift; sourceTree = "<group>"; };
 		A3966C677EE705C59899A45A91F01618 /* MJRefreshNormalHeader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshNormalHeader.m; path = MJRefresh/Custom/Header/MJRefreshNormalHeader.m; sourceTree = "<group>"; };
+		A3EC813A007D7ADFDF58067CB267FFB5 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		A44904160A4F98D6459ACBDAA185E98D /* WXPageViewController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "WXPageViewController-dummy.m"; sourceTree = "<group>"; };
 		A58B1BEDCAB842F5FE1EF6222A12838C /* MJRefreshBackGifFooter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshBackGifFooter.h; path = MJRefresh/Custom/Footer/Back/MJRefreshBackGifFooter.h; sourceTree = "<group>"; };
+		A87F28A959207B19D97DE9F974A5D1A6 /* WXSegmentedViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WXSegmentedViewController.swift; path = Sources/WXSegmentedViewController.swift; sourceTree = "<group>"; };
 		A91F27B033BC8597593DA4F3797E3CE9 /* MJRefreshAutoStateFooter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshAutoStateFooter.m; path = MJRefresh/Custom/Footer/Auto/MJRefreshAutoStateFooter.m; sourceTree = "<group>"; };
-		A97AA4783BD36B4CD0847817D44D6FC7 /* WXPageViewController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WXPageViewController-umbrella.h"; sourceTree = "<group>"; };
+		A9372A9857545DEF4D47B017E6D1B55E /* WXPageViewController.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WXPageViewController.release.xcconfig; sourceTree = "<group>"; };
 		A9C11F500618AD5C0EE0177C72E19B69 /* MJRefreshHeader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshHeader.m; path = MJRefresh/Base/MJRefreshHeader.m; sourceTree = "<group>"; };
 		AC16C56785B09BDB098FA2489E75878F /* MJRefreshAutoGifFooter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshAutoGifFooter.h; path = MJRefresh/Custom/Footer/Auto/MJRefreshAutoGifFooter.h; sourceTree = "<group>"; };
 		AD056F05559DE4175D62935FB8386F31 /* Pods-PageViewControllerExample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PageViewControllerExample-acknowledgements.markdown"; sourceTree = "<group>"; };
 		AF72E8DE6DAB09CE8B8AF9A85E1DE699 /* NSBundle+MJRefresh.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSBundle+MJRefresh.m"; path = "MJRefresh/NSBundle+MJRefresh.m"; sourceTree = "<group>"; };
 		AFDEA68299BD0DB3D35B98777C6EC909 /* MJRefreshBackFooter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshBackFooter.h; path = MJRefresh/Base/MJRefreshBackFooter.h; sourceTree = "<group>"; };
-		B8EDD95072EABDC68586838ED8184374 /* Pods_PageViewControllerExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PageViewControllerExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8EDD95072EABDC68586838ED8184374 /* Pods_PageViewControllerExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PageViewControllerExample.framework; path = "Pods-PageViewControllerExample.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B98DB983951866FF0FB864D9B4E520D1 /* MJRefreshAutoNormalFooter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshAutoNormalFooter.m; path = MJRefresh/Custom/Footer/Auto/MJRefreshAutoNormalFooter.m; sourceTree = "<group>"; };
 		BABA745ECEABD779DED456A3225A2F5E /* MJRefreshBackGifFooter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshBackGifFooter.m; path = MJRefresh/Custom/Footer/Back/MJRefreshBackGifFooter.m; sourceTree = "<group>"; };
 		BDFBAB43B088997DD85DFDD32030FFEF /* MJRefreshGifHeader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshGifHeader.m; path = MJRefresh/Custom/Header/MJRefreshGifHeader.m; sourceTree = "<group>"; };
 		C11FECEDF683DF9CB9CEB573484B6CC4 /* MJRefreshConfig.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshConfig.m; path = MJRefresh/MJRefreshConfig.m; sourceTree = "<group>"; };
-		C5235425A5435026924C2DBA5CBCCF3E /* WXPageViewController-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "WXPageViewController-Info.plist"; sourceTree = "<group>"; };
-		C6D565AD4384D6E416D482BFAD908294 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		C7327EF8E9A965D734C28ADB502F194C /* WXPinnedScrollView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WXPinnedScrollView.swift; path = Sources/WXPinnedScrollView.swift; sourceTree = "<group>"; };
-		CA26D40C1CBE6AC4EE3FDC4A4C6C11BA /* WXSegmentedHeaderView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WXSegmentedHeaderView.swift; path = Sources/WXSegmentedHeaderView.swift; sourceTree = "<group>"; };
-		CABA693B16F7FB594317BA8F16CD1C49 /* WXPageViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WXPageViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CABA693B16F7FB594317BA8F16CD1C49 /* WXPageViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = WXPageViewController.framework; path = WXPageViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCB3FF19772B6DF80EBCCCF49FC631D7 /* MJRefreshBackNormalFooter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshBackNormalFooter.h; path = MJRefresh/Custom/Footer/Back/MJRefreshBackNormalFooter.h; sourceTree = "<group>"; };
 		CCBFB2C12764F70EA8AE44853240A082 /* MJRefreshStateHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshStateHeader.h; path = MJRefresh/Custom/Header/MJRefreshStateHeader.h; sourceTree = "<group>"; };
 		CF6FD6EB04615132851B436F214F4EC5 /* MJRefreshComponent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshComponent.h; path = MJRefresh/Base/MJRefreshComponent.h; sourceTree = "<group>"; };
-		D889F26FDD6F75647784F8AF76698F63 /* WXPageViewController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = WXPageViewController.modulemap; sourceTree = "<group>"; };
+		D8E0DB17E9681BC60A3B1619EFACCA5B /* WXBadge.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WXBadge.swift; path = Sources/WXBadge.swift; sourceTree = "<group>"; };
 		DA942F9FC54C26FFD454520683033D90 /* MJRefreshBackFooter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshBackFooter.m; path = MJRefresh/Base/MJRefreshBackFooter.m; sourceTree = "<group>"; };
 		DF17A13DC11FCDDA48858BD809FB6790 /* Pods-PageViewControllerExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PageViewControllerExample.debug.xcconfig"; sourceTree = "<group>"; };
 		DF20CA04E61334BBA76E18BB4B17F77D /* MJRefresh-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "MJRefresh-Info.plist"; sourceTree = "<group>"; };
+		E0A53C7EEE12B484D33001979E3F79B9 /* WXPageViewController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = WXPageViewController.modulemap; sourceTree = "<group>"; };
 		E457105F885C5E7DD18759E6D8B6B972 /* MJRefreshNormalHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshNormalHeader.h; path = MJRefresh/Custom/Header/MJRefreshNormalHeader.h; sourceTree = "<group>"; };
-		E49D6D248DD1CEE584E6776B9164A1B2 /* MJRefresh.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MJRefresh.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E49D6D248DD1CEE584E6776B9164A1B2 /* MJRefresh.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MJRefresh.framework; path = MJRefresh.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4E3682AAD93CCE585CF9AA2B8BDEC7B /* MJRefreshBackNormalFooter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshBackNormalFooter.m; path = MJRefresh/Custom/Footer/Back/MJRefreshBackNormalFooter.m; sourceTree = "<group>"; };
 		E56EB596EF3E96E6EBF8B8982954A071 /* MJRefresh-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MJRefresh-dummy.m"; sourceTree = "<group>"; };
+		E74276BFC6A8BFD4EBD8FF97B009953D /* WXSegmentedHeaderView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WXSegmentedHeaderView.swift; path = Sources/WXSegmentedHeaderView.swift; sourceTree = "<group>"; };
 		E8D2D9769334AA7745727BC97BE98D35 /* MJRefreshConst.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshConst.m; path = MJRefresh/MJRefreshConst.m; sourceTree = "<group>"; };
-		EAF5A7FE319E7004ED2F58CD74F5BF08 /* WXPageViewController.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = WXPageViewController.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		EDB66A2B2F995E279B686097A4A88F48 /* MJRefreshFooter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshFooter.m; path = MJRefresh/Base/MJRefreshFooter.m; sourceTree = "<group>"; };
 		F91E97AF1917A4887608CB4A4F52FD5C /* MJRefreshAutoStateFooter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshAutoStateFooter.h; path = MJRefresh/Custom/Footer/Auto/MJRefreshAutoStateFooter.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -172,14 +178,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		17CFF0FF27D00FA6D4F591969E989110 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AF3AF9D4D525F17444B1E12117993C27 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		984849B78145529F733FDABA5F122A32 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -188,24 +186,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B04D1AFB5A44522AF1C555F2C34DA559 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C967EFFAA6B4B69FB22E9D0AB3E94A9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0270D037AD62FEF50A65F92A77FE5694 /* WXPageViewController */ = {
-			isa = PBXGroup;
-			children = (
-				4B7A4F7D1B5D49EC35334173A2322763 /* WXPageViewController.swift */,
-				C7327EF8E9A965D734C28ADB502F194C /* WXPinnedScrollView.swift */,
-				0A3A6642E86BFA8D190B5049DDC2FC06 /* WXPinnedSegmentedViewController.swift */,
-				CA26D40C1CBE6AC4EE3FDC4A4C6C11BA /* WXSegmentedHeaderView.swift */,
-				5549AC6E5C4A4F5BDBB3AAF369E97C13 /* WXSegmentedViewController.swift */,
-				1F4DDD9F5D53B8164B5ED21A5EA975D5 /* Pod */,
-				E9763950085BA67C9D48A60223C6996C /* Support Files */,
-			);
-			name = WXPageViewController;
-			path = ../..;
-			sourceTree = "<group>";
-		};
 		1631AABB60266D6F92FE9AFFBDF50A23 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -214,16 +205,6 @@
 				CABA693B16F7FB594317BA8F16CD1C49 /* WXPageViewController.framework */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		1F4DDD9F5D53B8164B5ED21A5EA975D5 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				C6D565AD4384D6E416D482BFAD908294 /* LICENSE */,
-				946E40220CC71EE0EFCEC93FBB8D2417 /* README.md */,
-				EAF5A7FE319E7004ED2F58CD74F5BF08 /* WXPageViewController.podspec */,
-			);
-			name = Pod;
 			sourceTree = "<group>";
 		};
 		1F80367504DC1284F363CB4F35866244 /* Support Files */ = {
@@ -239,6 +220,32 @@
 			);
 			name = "Support Files";
 			path = "../Target Support Files/MJRefresh";
+			sourceTree = "<group>";
+		};
+		275D153161D5E47A873BD8E5EAD46F2B /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				32A84C3155DFAEC9922B6542DBAADD92 /* WXPageViewController */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		32A84C3155DFAEC9922B6542DBAADD92 /* WXPageViewController */ = {
+			isa = PBXGroup;
+			children = (
+				D8E0DB17E9681BC60A3B1619EFACCA5B /* WXBadge.swift */,
+				A157911E54791CA21561315D7787059B /* WXBadgeView.swift */,
+				24B650F2433A3063522AFACEECACC9BA /* WXPageViewController.swift */,
+				817973A36747EFE8C2A2AC48EB1E2275 /* WXPinnedScrollView.swift */,
+				22E7DB5A1238318A42279E1502967D67 /* WXPinnedSegmentedViewController.swift */,
+				075C87E4CCA718B47EC605BA3E25B705 /* WXSegmentedHeaderItemView.swift */,
+				E74276BFC6A8BFD4EBD8FF97B009953D /* WXSegmentedHeaderView.swift */,
+				A87F28A959207B19D97DE9F974A5D1A6 /* WXSegmentedViewController.swift */,
+				90D5ADA9430C6F31ECA3B1FA07B52E4B /* Pod */,
+				848D55EE7EF46D1D0EF07AF96798494E /* Support Files */,
+			);
+			name = WXPageViewController;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		3CFAD744328972C1D09DD297C0E4B7CD /* Targets Support Files */ = {
@@ -264,6 +271,31 @@
 			);
 			name = "Pods-PageViewControllerExample";
 			path = "Target Support Files/Pods-PageViewControllerExample";
+			sourceTree = "<group>";
+		};
+		848D55EE7EF46D1D0EF07AF96798494E /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E0A53C7EEE12B484D33001979E3F79B9 /* WXPageViewController.modulemap */,
+				A44904160A4F98D6459ACBDAA185E98D /* WXPageViewController-dummy.m */,
+				3E2B4828B19C4D2BA38B03E0F583CFBB /* WXPageViewController-Info.plist */,
+				14D0064BCC458391DC185631836E0DBA /* WXPageViewController-prefix.pch */,
+				3004A0EA9CAE1F57FFDBC67DB4F0A222 /* WXPageViewController-umbrella.h */,
+				7F3DBA7F1FD0BFAFAE4A7554BB65F2CF /* WXPageViewController.debug.xcconfig */,
+				A9372A9857545DEF4D47B017E6D1B55E /* WXPageViewController.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/WXPageViewController";
+			sourceTree = "<group>";
+		};
+		90D5ADA9430C6F31ECA3B1FA07B52E4B /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				A3EC813A007D7ADFDF58067CB267FFB5 /* LICENSE */,
+				442DECDA2E4037AA4F578FA3D41DA5E7 /* README.md */,
+				4384FF8E2E8FE171D7D44B2B1B5154E8 /* WXPageViewController.podspec */,
+			);
+			name = Pod;
 			sourceTree = "<group>";
 		};
 		9615B47872DE228B2832B10ABB71B8C4 /* MJRefresh */ = {
@@ -313,15 +345,8 @@
 				CB8EABD8AD30F1E74156BAC687738046 /* Resources */,
 				1F80367504DC1284F363CB4F35866244 /* Support Files */,
 			);
+			name = MJRefresh;
 			path = MJRefresh;
-			sourceTree = "<group>";
-		};
-		BFED4E2CFC0E02E2FCB7BDF01CBA63FC /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				0270D037AD62FEF50A65F92A77FE5694 /* WXPageViewController */,
-			);
-			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
@@ -344,7 +369,7 @@
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				BFED4E2CFC0E02E2FCB7BDF01CBA63FC /* Development Pods */,
+				275D153161D5E47A873BD8E5EAD46F2B /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
 				F7FAD2F46C64E5EA51757FAF89239427 /* Pods */,
 				1631AABB60266D6F92FE9AFFBDF50A23 /* Products */,
@@ -360,21 +385,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		E9763950085BA67C9D48A60223C6996C /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				D889F26FDD6F75647784F8AF76698F63 /* WXPageViewController.modulemap */,
-				97216C09F6A3A24CC2DCC70DEFE20411 /* WXPageViewController-dummy.m */,
-				C5235425A5435026924C2DBA5CBCCF3E /* WXPageViewController-Info.plist */,
-				70339E65DC2D59658378941C5EEBBA6C /* WXPageViewController-prefix.pch */,
-				A97AA4783BD36B4CD0847817D44D6FC7 /* WXPageViewController-umbrella.h */,
-				64E63DA40AEDF7A2B23A8D04D45DDA56 /* WXPageViewController.debug.xcconfig */,
-				0E4D0519D5CAA45FE74D906B58484329 /* WXPageViewController.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/WXPageViewController";
-			sourceTree = "<group>";
-		};
 		F7FAD2F46C64E5EA51757FAF89239427 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -386,6 +396,14 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		8E89FEC834111B1C7C95E79F6EC89BA4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				390A37896FEBE3274DC51298F629B614 /* WXPageViewController-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A85AAFC3C3F2D21FF0949F9C28F16F53 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -412,14 +430,6 @@
 				CBDC089A3E26FC6825F64E078195BF01 /* UIScrollView+MJExtension.h in Headers */,
 				6C1461ED2AF53643934B4B97E9BB8A7D /* UIScrollView+MJRefresh.h in Headers */,
 				C0B2C760334561E4910FADD8520C85C3 /* UIView+MJExtension.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AB4F16AF625C43798B7BA6C08CEE47E3 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1261A4504ABC000DADB914DFD485C8F7 /* WXPageViewController-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -474,12 +484,12 @@
 		};
 		8986718990EA935DC490B5C6B805751F /* WXPageViewController */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EE2CBD68E2B828EA10AAF2ACD2DF43A3 /* Build configuration list for PBXNativeTarget "WXPageViewController" */;
+			buildConfigurationList = 38FC0B2D2158767F0AA042C9AD42C95E /* Build configuration list for PBXNativeTarget "WXPageViewController" */;
 			buildPhases = (
-				AB4F16AF625C43798B7BA6C08CEE47E3 /* Headers */,
-				F74E19341422B090C677CA7B69B873FF /* Sources */,
-				17CFF0FF27D00FA6D4F591969E989110 /* Frameworks */,
-				666F92DB02E571CB63C655DAFC2978B8 /* Resources */,
+				8E89FEC834111B1C7C95E79F6EC89BA4 /* Headers */,
+				2FAFBA10CF34029610E29A78BA02F3B8 /* Sources */,
+				B04D1AFB5A44522AF1C555F2C34DA559 /* Frameworks */,
+				8E8A533F3C0493F226517310A48C2A62 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -520,14 +530,14 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		666F92DB02E571CB63C655DAFC2978B8 /* Resources */ = {
+		858C6301FCDACB71BD9087E26293F2B0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		858C6301FCDACB71BD9087E26293F2B0 /* Resources */ = {
+		8E8A533F3C0493F226517310A48C2A62 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -581,16 +591,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F74E19341422B090C677CA7B69B873FF /* Sources */ = {
+		2FAFBA10CF34029610E29A78BA02F3B8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA05CF50B6ECFF85266C8553DD7D08D5 /* WXPageViewController-dummy.m in Sources */,
-				029D77C257EA30EE6EBA817C3053DD0E /* WXPageViewController.swift in Sources */,
-				97B71CF23BF5007D1651515D2BCBC444 /* WXPinnedScrollView.swift in Sources */,
-				1AC8AE52549503DDCAD18BB80B1565D5 /* WXPinnedSegmentedViewController.swift in Sources */,
-				7F02E38D09D6CD62428DE30DBD2024CF /* WXSegmentedHeaderView.swift in Sources */,
-				468A35DCCD620E4862D4C099DDC9D45E /* WXSegmentedViewController.swift in Sources */,
+				23325EB07CB4EE5839122DE86610212F /* WXBadge.swift in Sources */,
+				E85961E5DC509DBDC34DD3A5ADA2E8BD /* WXBadgeView.swift in Sources */,
+				5475797B1BF438E592D4745BF2BAACE2 /* WXPageViewController-dummy.m in Sources */,
+				6B8784490E19F87A5F9AB78C3DD2692D /* WXPageViewController.swift in Sources */,
+				4D59B361C9B95EAE5442A302E87E5491 /* WXPinnedScrollView.swift in Sources */,
+				9A673993E0E518B4F7DAEA4CB905E124 /* WXPinnedSegmentedViewController.swift in Sources */,
+				5AE4C905E3E987E3FD7B5620989FFD39 /* WXSegmentedHeaderItemView.swift in Sources */,
+				30DDF098EDF1D726CB93A007BF437741 /* WXSegmentedHeaderView.swift in Sources */,
+				5080C539C74DF65643D65291B7129839 /* WXSegmentedViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -671,42 +684,6 @@
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
-		};
-		1CAEDB584BA546596826F094A410035C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 64E63DA40AEDF7A2B23A8D04D45DDA56 /* WXPageViewController.debug.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/WXPageViewController/WXPageViewController-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/WXPageViewController/WXPageViewController-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/WXPageViewController/WXPageViewController.modulemap";
-				PRODUCT_MODULE_NAME = WXPageViewController;
-				PRODUCT_NAME = WXPageViewController;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
 		};
 		34FCD00EBE018AAE87B3BD8FC593CC7A /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -820,9 +797,9 @@
 			};
 			name = Debug;
 		};
-		6B2FE50E2D13FC5133E629C3E54BA256 /* Release */ = {
+		89D8F336A044F98DFBC0B14D7B3EBC7C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0E4D0519D5CAA45FE74D906B58484329 /* WXPageViewController.release.xcconfig */;
+			baseConfigurationReference = 7F3DBA7F1FD0BFAFAE4A7554BB65F2CF /* WXPageViewController.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -851,11 +828,10 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 		946566B98B66FA26BC7D2FE3AEC5397C /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -882,6 +858,43 @@
 				MODULEMAP_FILE = "Target Support Files/MJRefresh/MJRefresh.modulemap";
 				PRODUCT_MODULE_NAME = MJRefresh;
 				PRODUCT_NAME = MJRefresh;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E129244E7346C9DAD00DC43CF45250BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9372A9857545DEF4D47B017E6D1B55E /* WXPageViewController.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/WXPageViewController/WXPageViewController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/WXPageViewController/WXPageViewController-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/WXPageViewController/WXPageViewController.modulemap";
+				PRODUCT_MODULE_NAME = WXPageViewController;
+				PRODUCT_NAME = WXPageViewController;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
@@ -969,6 +982,15 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		38FC0B2D2158767F0AA042C9AD42C95E /* Build configuration list for PBXNativeTarget "WXPageViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				89D8F336A044F98DFBC0B14D7B3EBC7C /* Debug */,
+				E129244E7346C9DAD00DC43CF45250BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -983,15 +1005,6 @@
 			buildConfigurations = (
 				4F8E211F1F8092CA6CFBE6600DF49491 /* Debug */,
 				946566B98B66FA26BC7D2FE3AEC5397C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		EE2CBD68E2B828EA10AAF2ACD2DF43A3 /* Build configuration list for PBXNativeTarget "WXPageViewController" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				1CAEDB584BA546596826F094A410035C /* Debug */,
-				6B2FE50E2D13FC5133E629C3E54BA256 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

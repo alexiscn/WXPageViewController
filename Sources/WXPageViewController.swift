@@ -9,7 +9,7 @@
 import UIKit
 
 /// The methods adopted by the object you use to manage data and provide view controllers for a page view controller.
-@objc public protocol WXPageViewControllerDataSource: class {
+@objc public protocol WXPageViewControllerDataSource: AnyObject {
     
     /// Asks the data source to return the number of pages in the page view controller.
     /// - Parameter pageViewController: An object representing the page view controller requesting this information
@@ -24,7 +24,7 @@ import UIKit
     
 }
 
-@objc public protocol WXPageViewControllerDelegate: class {
+@objc public protocol WXPageViewControllerDelegate: AnyObject {
     
     @objc optional func pageViewController(_ pageViewController: WXPageViewController,
                                            didUpdatedScrollingPercent percent: CGFloat)

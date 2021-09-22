@@ -2,14 +2,14 @@
 //  WXSegmentedViewController.swift
 //  WXPageViewController
 //
-//  Created by xushuifeng on 2020/8/3.
+//  Created by alexiscn on 2020/8/3.
 //  Copyright © 2020 alexiscn. All rights reserved.
 //
 
 import UIKit
 
 /// The methods adopted by the object you use to manage data and provide view controllers for a segmented view controller.
-@objc public protocol WXSegmentedViewControllerDataSource: class {
+@objc public protocol WXSegmentedViewControllerDataSource: AnyObject {
  
     /// Asks the data source to return the number of pages in the segmented  view controller.
     /// - Parameter segmentedViewController: An object representing the segmented view controller requesting this information
@@ -31,7 +31,7 @@ import UIKit
     
 }
 
-@objc public protocol WXSegmentedViewControllerDelegate: class {
+@objc public protocol WXSegmentedViewControllerDelegate: AnyObject {
     
     @objc optional func segmentedViewController(_ segmentedViewController: WXSegmentedViewController,
                                                 didEnterViewController viewController: UIViewController?,

@@ -2,12 +2,12 @@
 //  WXPinnedSegmentedViewController.swift
 //  WXPageViewController
 //
-//  Created by xushuifeng on 2020/9/14.
+//  Created by alexiscn on 2020/9/14.
 //
 
 import UIKit
 
-public protocol WXPinnedSegmentedViewControllerDataSource: class {
+public protocol WXPinnedSegmentedViewControllerDataSource: AnyObject {
     
     func numberOfItemsInPinnedSegmentedViewController(_ segmentedViewController: WXPinnedSegmentedViewController) -> Int
     
@@ -18,7 +18,7 @@ public protocol WXPinnedSegmentedViewControllerDataSource: class {
                                        titleAtIndex index: Int) -> String
 }
 
-public protocol WXPinnedSegmentedViewControllerDelgate: class {
+public protocol WXPinnedSegmentedViewControllerDelgate: AnyObject {
     
 }
 

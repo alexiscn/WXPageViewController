@@ -2,7 +2,7 @@
 //  WXPageViewController.h
 //  WXPageViewController
 //
-//  Created by xu.shuifeng on 2020/7/31.
+//  Created by alexiscn on 2020/7/31.
 //  Copyright © 2020 alexiscn. All rights reserved.
 //
 

@@ -24,6 +24,9 @@ class MainViewController: UITableViewController {
         case 0:
             let purePageViewController = PurePageViewController()
             navigationController?.pushViewController(purePageViewController, animated: true)
+        case 2:
+            let twitterProfileVC = TwitterProfileViewController()
+            navigationController?.pushViewController(twitterProfileVC, animated: true)
         default:
             break
         }
