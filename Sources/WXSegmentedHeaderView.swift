@@ -10,6 +10,8 @@ import UIKit
 
 @objc public protocol WXSegmentedHeaderViewDataSource: AnyObject {
  
+    func numberOfItemsOfSegmentedHeaderView(_ segmentedView: WXSegmentedHeaderView) -> Int
+    
     func segmentedHeaderView(_ segmentedView: WXSegmentedHeaderView,
                              titleAtIndex index: Int) -> String
     
@@ -35,6 +37,8 @@ public class WXSegmentedHeaderView: UIView {
     
     public weak var delegate: WXSegmentedHeaderViewDelegate?
     
+    private var collectionView: UICollectionView!
+    
     public override init(frame: CGRect) {
         super.init(frame: frame)
     }
@@ -47,7 +51,17 @@ public class WXSegmentedHeaderView: UIView {
         super.layoutSubviews()
     }
     
+    public func reloadData() {
+        subviews.forEach { $0.removeFromSuperview() }
+        
+        guard let numberOfItems = dataSource?.numberOfItemsOfSegmentedHeaderView(self) else {
+            return
+        }
+        
+    }
+    
     public func pageScrollViewDidUpdateScrollingPercent(_ percent: CGFloat) {
         
     }
 }
+

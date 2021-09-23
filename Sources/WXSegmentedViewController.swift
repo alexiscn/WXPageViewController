@@ -74,6 +74,7 @@ public class WXSegmentedViewController: UIViewController {
         let headerFrame = CGRect(x: 0, y: 0, width: view.bounds.width, height: 44)
         let frame = dataSource?.segmentedViewControllerPreferredHeaderFrame?(self) ?? headerFrame
         headerView = WXSegmentedHeaderView(frame: frame)
+        headerView.dataSource = self
         headerView.delegate = self
         view.addSubview(headerView)
     }
@@ -97,6 +98,18 @@ extension WXSegmentedViewController: WXSegmentedHeaderViewDelegate {
     
     public func segmentedView(_ headerView: WXSegmentedHeaderView, didSelectedIndex index: Int) {
         
+    }
+}
+
+// MARK: - WXSegmentedHeaderViewDataSource
+extension WXSegmentedViewController: WXSegmentedHeaderViewDataSource {
+    
+    public func numberOfItemsOfSegmentedHeaderView(_ segmentedView: WXSegmentedHeaderView) -> Int {
+        return dataSource?.numberOfItemsFor(self) ?? 1
+    }
+    
+    public func segmentedHeaderView(_ segmentedView: WXSegmentedHeaderView, titleAtIndex index: Int) -> String {
+        return dataSource?.segmentedViewController(self, titleAtIndex: index) ?? ""
     }
 }
 
